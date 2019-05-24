@@ -5,7 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
-const TAG_NAME = 'aet-button'
+const TAG_NAME = 'my-custom-element'
 
 export default {
 	input: 'src/main.js',
