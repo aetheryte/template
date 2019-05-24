@@ -1,1 +1,1 @@
-aetheryte-template
+# svelte template for custom element
