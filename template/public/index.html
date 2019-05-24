@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+
+	<title>Aetheryte Components</title>
+
+    <style>
+        html {
+            font-family: Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            padding: 2rem;
+        }
+
+        section {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: .75rem;
+            justify-content: start;
+            align-items: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <my-custom-element foo="bar"></my-custom-element>
+        </section>
+    </main>
+    <script src='my-custom-element.js'></script>
+</body>
+</html>
