@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
+const TAG_NAME = 'aet-button'
 
 export default {
 	input: 'src/main.js',
@@ -12,15 +13,15 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/my-custom-element.js'
+		file: `public/${TAG_NAME}.js`
 	},
 	plugins: [
 		svelte({
             // enable run-time checks when not in production
-            filename: 'my-custom-element',
+            filename: `${TAG_NAME}`,
             dev: !production,
             customElement: true,
-            tag: 'my-custom-element',
+            tag: `${TAG_NAME}`,
 
             css: true,
 		}),
